@@ -67,8 +67,24 @@
 
 ---
 
+## 🐍 Python 版（進階）
+
+如果偏好在桌面應用程式執行，`Python版/` 資料夾內有原始 Python/pygame 版本：
+
+| 系統 | 做法 |
+|------|------|
+| **Mac** | 雙擊 `Python版/Mac啟動遊戲.command`（需先安裝 Python 3） |
+| **Windows** | 雙擊 `Python版/Windows啟動遊戲.bat`（需先安裝 Python 3） |
+
+> ⚠️ 需要先安裝 Python 3：https://www.python.org/downloads/
+> 安裝時記得勾選「Add Python to PATH」
+> 第一次啟動會自動安裝 pygame（約 30 秒），之後直接秒開
+
+---
+
 ## 💻 系統需求
 
-- 任何現代瀏覽器（Chrome、Safari、Firefox、Edge）
-- 不需要網路連線（線上版除外）
-- 不需要安裝任何軟體或執行環境
+| 版本 | 需求 |
+|------|------|
+| 網頁版 | 任何現代瀏覽器（Chrome、Safari、Firefox、Edge），無需安裝 |
+| Python版 | Python 3 + pygame（啟動腳本自動安裝） |

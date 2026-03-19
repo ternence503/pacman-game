@@ -8,7 +8,7 @@
 
 點這個連結，用瀏覽器開啟就能玩：
 
-👉 **https://ternence503.github.io/pacman/**
+👉 **https://ternence503.github.io/pacman-game/**
 
 ---
 
@@ -20,7 +20,7 @@
 
 ### 第二步：解壓縮
 
-找到下載的 `pacman-main.zip`，雙擊解壓縮。
+找到下載的 `pacman-game-main.zip`，雙擊解壓縮。
 
 ### 第三步：啟動遊戲
 

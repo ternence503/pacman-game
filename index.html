@@ -71,21 +71,7 @@
     margin-top: 20px;
   }
   .instructions b { color: #ffdd00; }
-  #muteBtn {
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    background: rgba(0,0,0,0.6);
-    border: 1px solid #444;
-    color: white;
-    width: 36px; height: 36px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-    display: flex; align-items: center; justify-content: center;
-    z-index: 10;
-  }
-  #muteBtn:hover { background: rgba(80,80,80,0.8); }
+  #muteBtn { display: none; }
 </style>
 </head>
 <body>
@@ -526,6 +512,11 @@ class Game {
       if (['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' '].includes(e.key)) e.preventDefault();
       if (this.state==='title') { this.startGame(); return; }
       if ((e.key==='r'||e.key==='R') && (this.state==='game_over')) this.restartGame();
+      if (e.key==='m'||e.key==='M') {
+        muted = !muted;
+        document.getElementById('muteBtn').textContent = muted ? '🔇' : '🔊';
+        if (muted) { stopSiren(); stopFright(); }
+      }
     });
     window.addEventListener('keyup', e => { this.keys[e.key] = false; });
 
@@ -728,7 +719,12 @@ class Game {
 
     ctx.fillStyle = C.GRAY;
     ctx.font = '14px Arial';
-    ctx.fillText('方向鍵移動  R重玩', 10, y0+62);
+    ctx.fillText('方向鍵移動  R重玩  M音效', 10, y0+62);
+
+    // 音效開關圖示
+    const icon = muted ? '🔇' : '🔊';
+    ctx.font = '22px Arial';
+    ctx.fillText(icon, W-36, y0+68);
 
     // overlays
     if (this.state==='game_over') {

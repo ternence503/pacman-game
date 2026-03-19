@@ -1,4 +1,4 @@
-# 🟡 小精靈 PAC-MAN
+# 🟡 小精靈 PAC-MAN &nbsp;![version](https://img.shields.io/badge/版本-v2.0-yellow)
 
 > 不用安裝任何東西，下載就能玩！連十歲小朋友都能輕鬆上手 😊
 

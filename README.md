@@ -18,6 +18,8 @@
 
 點右上角綠色的 **`Code`** 按鈕 → 選 **`Download ZIP`**
 
+![下載示意](https://docs.github.com/assets/cb-47677/mw-1440/images/help/repository/code-button.webp)
+
 ### 第二步：解壓縮
 
 找到下載的 `pacman-game-main.zip`，雙擊解壓縮。
